@@ -108,10 +108,6 @@ ul {
 
 /* End Componants  */
 
-
-
-
-
 /* Start Header  */
 
 header {
@@ -161,12 +157,10 @@ header nav .toggle-menu {
     header nav .toggle-menu {
         display: none;
     }
-
 }
 
 header nav ul {
     display: flex;
-
 }
 
 @media(max-width:767px) {
@@ -207,14 +201,12 @@ header nav ul li a:hover {
     border-bottom: 1px solid var(--main-color);
 }
 
-
 header nav .form {
     position: relative;
     border-left: 1px solid white;
     margin-left: 30px;
     width: 40px;
     height: 30px;
-
 }
 
 header nav .form i {
@@ -232,7 +224,6 @@ header nav .form i {
 .landing {
     min-height: 100vh;
     background-color: #1f2021;
-
     /* if image does not appear for any reason will use this color alternate it   */
     background-image: url("/images/Download\ premium\ image\ of\ \ Black\ owl\ animal\ bird\ black\ background\ \ by\ Techi\ about\ background\,\ black\ background\,\ animal\,\ bird\,\ and\ eye\ 13177664\ \(1\).jpg");
     background-size: cover;
@@ -295,7 +286,21 @@ header nav .form i {
     color: #ddd;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
+    .landing .text {
+        margin-top: 10px;
+        padding: 30px;
+    }
+
+    .landing .text .content h2 {
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+
+    .landing .text .content p {
+        font-size: 12px;
+    }
+
     .landing .change-background {
         display: none;
     }
@@ -444,7 +449,6 @@ header nav .form i {
 
 .design .text ul li {
     padding: 15px 0;
-
 }
 
 .design .text ul li::before {
@@ -483,6 +487,7 @@ header nav .form i {
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 60px;
+    padding-left: 25px;
 }
 
 .portfolio .image-container .box {
@@ -505,6 +510,8 @@ header nav .form i {
 .portfolio .image-container .box img {
     max-width: 100%;
     transition: 0.3s;
+    width: 275px;
+    height: 183px;
 }
 
 .portfolio .image-container .box:hover img {
@@ -596,6 +603,27 @@ header nav .form i {
     text-transform: uppercase;
     padding: 10px 20px;
     border: none;
+}
+
+@media(max-width:767px) {
+    .video .text {
+        padding: 10px;
+    }
+
+    .video .text h2 {
+        margin: 0 0 15px;
+        font-size: 20px;
+    }
+
+    .video .text p {
+        margin-bottom: 15px;
+    }
+
+    .video .text button {
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
 }
 
 /* End Video */
